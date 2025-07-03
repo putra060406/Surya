@@ -1,0 +1,33 @@
+.grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 25px;
+  justify-content: center;
+}
+
+.grid > .item > a > img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+.btn-buka {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  padding: 10px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-buka:hover {
+  background-color: #0056b3;
+}
+
+@media only screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 45% 45%;
+  }
+}

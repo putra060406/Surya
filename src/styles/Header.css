@@ -1,0 +1,114 @@
+header {
+  background: linear-gradient(135deg, #5b1f1f, #284547);
+  height: 100vh;
+  background-position: center center;
+  position: relative;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 5px;
+  text-shadow: 0 0 4px #1a0470;
+}
+
+.header-jumbotron {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.header-jumbotron > img {
+  width: 250px;
+}
+.header-jumbotron > h3 {
+  color: #fff;
+  margin: 30px 0px 0px 0px;
+  padding: 5px;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+.header-jumbotron > h3 {
+  color: transparent;
+  background-image: linear-gradient(270deg, #f2ff00, #a200ff, #00f2ff, #ff0000);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: rainbowText 12s ease infinite;
+}
+
+@keyframes rainbowText {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.header-jumbotron > p {
+  padding: 5px;
+  margin: 0px 5px 20px 5px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.socialMedia > a {
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.socialMedia > a > svg {
+  font-size: 30px;
+}
+
+.socialMedia > a:hover {
+  transform: scale(1.4);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.socialMedia > a.instagram:hover {
+  background-color: #ff2b80;
+}
+.socialMedia > a.tiktok:hover {
+  background-color: #000000;
+}
+.socialMedia > a.whatsapp:hover {
+  background-color: #00de4e;
+}
+.socialMedia > a.facebook:hover {
+  background-color: #0e63e5;
+}
+
+@media only screen and (max-width: 1000px) {
+  .socialMedia > a {
+    width: 60px;
+    height: 60px;
+  }
+
+  .socialMedia > a > svg {
+    height: 30px;
+    width: auto;
+  }
+}
+
+/* ⬇️ Tambahkan ini di bawahnya */
+.typewriter-text {
+  font-size: 3.5rem;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 30px;
+  min-height: 60px;
+}
